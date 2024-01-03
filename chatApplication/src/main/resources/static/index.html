@@ -18,7 +18,7 @@
                 <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
             </div>
             <div class="form-group">
-                <button id="submit" onmouseover="fun1()" onmouseleave="fun2()" type="submit" class="accent username-submit">Start Chatting</button>
+                <button type="submit" class="accent username-submit">Start Chatting</button>
             </div>
         </form>
     </div>
@@ -27,7 +27,7 @@
 <div id="chat-page" class="hidden">
     <div class="chat-container">
         <div class="chat-header">
-            <h2>Spring WebSocket Chat Demo</h2>
+            <h2>Spring WebSocket Chat Demo - By Alibou</h2>
         </div>
         <div class="connecting">
             Connecting...
@@ -39,7 +39,7 @@
             <div class="form-group">
                 <div class="input-group clearfix">
                     <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
-                    <button id="sub" onmouseover="fun()" onmouseleave="fun3()" type="submit" class="primary">Send</button>
+                    <button type="submit" class="primary">Send</button>
                 </div>
             </div>
         </form>
@@ -49,29 +49,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="/js/main.js"></script>
-
-<script>
-    const submit=document.getElementById("sub");
-    function fun()
-    {
-        submit.style.color="blue";
-    }
-
-    function fun3()
-    {
-        submit.style.color="#6db33f"
-    }
-
-    const sub=document.getElementById("submit");
-    function fun1()
-    {
-        sub.style.color="blue";
-    }
-
-    function fun2()
-    {
-        sub.style.color="#6db33f"
-    }
-</script>
 </body>
 </html>
